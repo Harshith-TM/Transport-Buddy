@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="180dp"
+    android:layout_gravity="top|center"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_ticket"
+    android:elevation="20dp">
+
+    <TextView
+        android:id="@+id/txt_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/txt_start"
+        android:textColor="@color/grey2"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rc_txt_place1"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/txt_place1"
+        android:textColor="@color/black1"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_start"
+        app:layout_constraintTop_toBottomOf="@+id/txt_start"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_time"/>
+
+    <TextView
+        android:id="@+id/txt_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/txt_end"
+        android:textColor="@color/grey2"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_start"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rc_txt_place2"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/txt_place2"
+        android:textColor="@color/black1"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_end"
+        app:layout_constraintTop_toBottomOf="@+id/txt_end"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_date"/>
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/txt_time"
+        android:textColor="@color/grey2"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@id/rc_txt_place1"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/rc_txt_time1" />
+
+    <TextView
+        android:id="@+id/rc_txt_time1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/txt_time1"
+        android:textColor="@color/black1"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/txt_time"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_fare" />
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/txt_end"
+        android:textColor="@color/grey2"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/rc_txt_place2"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/rc_txt_date1" />
+
+    <TextView
+        android:id="@+id/rc_txt_date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/txt_date1"
+        android:textColor="@color/black1"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/txt_date"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_mode" />
+
+    <TextView
+        android:id="@+id/txt_fare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/txt_fare"
+        android:textColor="@color/grey2"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@id/rc_txt_time1"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/rc_txt_fare1" />
+
+    <TextView
+        android:id="@+id/rc_txt_fare1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/txt_fare1"
+        android:textColor="@color/black1"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/txt_fare"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/ticket_divider" />
+
+    <TextView
+        android:id="@+id/txt_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/txt_mode"
+        android:textColor="@color/grey2"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/rc_txt_date1"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/rc_txt_mode1" />
+
+    <TextView
+        android:id="@+id/rc_txt_mode1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/txt_mode1"
+        android:textColor="@color/black1"
+        android:textSize="14sp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintStart_toStartOf="@+id/txt_mode"
+        app:layout_constraintBottom_toTopOf="@+id/ticket_divider" />
+
+    <View
+        android:id="@+id/ticket_divider"
+        android:layout_width="250dp"
+        android:layout_height="3dp"
+        android:background="@drawable/bg_dashed_line"
+        app:layout_constraintBottom_toTopOf="@+id/rc_txt_ticketId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/rc_txt_ticketId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/txt_ticketNumber"
+        android:textColor="@color/black1"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

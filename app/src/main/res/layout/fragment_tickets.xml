@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal1"
+    tools:context=".fragment_Tickets">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:contentDescription="@string/txt_ticket"
+        android:src="@drawable/ill_ticket"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/border_views"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:id="@+id/ticketView_PBar"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/custom_progress_bar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcView_tickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

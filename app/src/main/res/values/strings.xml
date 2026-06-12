@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">Transport Buddy</string>
+    <!--Texts-->
+    <string name="txt_welcome">welcome</string>
+    <string name="txt_userName">UserName</string>
+    <string name="txt_userMail">UserMail</string>
+    <string name="txt_eMail">Email ID</string>
+    <string name="txt_passWord">Password</string>
+    <string name="txt_mobileNumber">Mobile Number</string>
+    <string name="txt_Dob">DOB</string>
+    <string name="txt_gender">Gender</string>
+    <!--Login-->
+    <string name="txt_login">login</string>
+    <string name="txt_signIn">sign in</string>
+    <string name="txt_signIn_Account">signin to your account</string>
+    <string name="txt_forgotPassword">Forgot Password?</string>
+    <string name="txt_newAcc">Don\'t Have An Account?</string>
+    <!--Signup-->
+    <string name="txt_signUp">sign up</string>
+    <string name="txt_create">Create Now</string>
+    <string name="txt_createAccount">create your account</string>
+    <!--Password Reset-->
+    <string name="txt_passwordReset">Password Reset</string>
+    <string name="txt_sendResetMail">Send Mail</string>
+    <!--Otp-->
+    <string name="txt_verification">Verification</string>
+    <string name="txt_verify">Verify</string>
+    <string name="txt_resend">Resend OTP</string>
+    <string name="txt_verifyAccount">Enter OTP to verify your account</string>
+    <string name="txt_timer">00:00</string>
+    <!--Profile-->
+    <string name="txt_profile">Profile</string>
+    <string name="txt_verificationID">Verification ID</string>
+    <string name="txt_editDetails">Edit Details</string>
+    <string name="txt_changePassword">Change Password</string>
+    <string name="txt_saveChanges">Save Changes</string>
+    <string name="txt_mobile">9876543210</string>
+    <string name="txt_date_format">DD/MM/YYYY</string>
+    <string name="txt_cancel">Cancel</string>
+    <!--Change Password-->
+    <string name="txt_currentPassword">Current Password</string>
+    <string name="txt_newPassword">New Password</string>
+    <string name="txt_confirmPassword">Confirm Password</string>
+    <!--Home-->
+    <string name="txt_searchDestination">Search For Destination</string>
+    <string name="txt_home">Home</string>
+    <string name="txt_place">Places</string>
+    <string name="txt_ticket">Tickets</string>
+    <string name="txt_passes">Passes</string>
+    <string name="txt_bmtc">BMTC</string>
+    <string name="txt_train">TRAIN</string>
+    <string name="txt_metro">METRO</string>
+    <string name="txt_map">Map</string>
+    <string name="navigation_drawer_open">OPEN NAVIGATION DRAWER</string>
+    <string name="navigation_drawer_close">CLOSE NAVIGATION DRAWER</string>
+    <!--Navigation Drawer-->
+    <string name="txt_contactUs">Contact Us</string>
+    <string name="txt_faq">Faq\'S</string>
+    <string name="txt_shareApp">Share App</string>
+    <string name="txt_logout">Logout</string>
+    <!--Fragment Home Tickets Places-->
+    <string name="txt_searchPlace">Search Any Place To Visit</string>
+    <string name="txt_start">Start</string>
+    <string name="txt_end">End</string>
+    <string name="txt_place1">PlaceOne</string>
+    <string name="txt_place2">PlaceTwo</string>
+    <string name="txt_time">Time</string>
+    <string name="txt_time1">00:00</string>
+    <string name="txt_date1">DD/MM/YYYY</string>
+    <string name="txt_fare">Fare</string>
+    <string name="txt_fare1">Rs-00</string>
+    <string name="txt_mode1">Bus</string>
+    <string name="txt_mode">Mode</string>
+    <string name="txt_ticketNumber">AB123456</string>
+    <!--Contact Us-->
+    <string name="txt_supportNumber">Phone: 1234567890</string>
+    <string name="txt_supportEmail">Email: support@transportbuddy.com</string>
+    <!--Logout-->
+    <string name="txt_logout_desc">Are you sure want to logout?</string>
+    <string name="txt_no">No</string>
+    <string name="txt_yes">Yes</string>
+    <!--Faq-->
+    <string name="txt_faq_full">Frequently Asked Questions</string>
+    <string name="txt_q1">Q1:What payment methods are accepted?</string>
+    <string name="txt_a1">We accept all major credit and debit cards, digital wallets (like Google Pay, PhonePe, and Paytm), net banking, and UPI for seamless, secure payments.</string>
+    <string name="txt_q2">Q2: What if my payment fails?</string>
+    <string name="txt_a2">If your payment doesn\'t go through, don’t worry! Your money will not be deducted in most cases. If it is, it will be automatically refunded within 5–7 business days. You can retry the booking or contact our support team with the payment reference number.</string>
+    <string name="txt_q3">Q3:  Can I book without creating an account?</string>
+    <string name="txt_a3">No, you’ll need to create an account to book. Having an account ensures a smoother experience with access to booking history, personalized offers. It also keeps your trip details secure and easy to manage.</string>
+    <string name="txt_q4">Q4:  Who do I contact if I face issues during booking or payment?</string>
+    <string name="txt_a4">You can reach out to our customer support team directly through the app\'s “Contact Us” section. Make sure to have your booking or payment reference number handy.</string>
+    <string name="txt_q5">Q5:  Is there 24/7 customer support available</string>
+    <string name="txt_a5">Yes, our support team is available 24/7 to assist you with any queries or issues—before, during, or after your booking.</string>
+    <!--Places-->
+    <string name="txt_place_name">Place</string>
+    <string name="txt_location_name">Location</string>
+    <string name="txt_get_directions">Get Directions</string>
+    <!--Lorem-->
+    <string name="txt_lorem">Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. Iaculis massa nisl malesuada lacinia integer nunc posuere. Semper vel class aptent taciti sociosqu ad litora. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.</string>
+    <!--Ticket Navigation-->
+    <string name="txt_payment">Payment</string>
+    <string name="txt_selection">Selection</string>
+    <!--Fragment Ticket Selection-->
+    <string name="txt_start_point">Choose starting point</string>
+    <string name="txt_destination">Choose destination</string>
+    <string name="txt_bus_number">Bus Number</string>
+    <string name="txt_bus_number1">123,456,789,000</string>
+    <string name="txt_number_of_tickets">Number of Tickets</string>
+    <string name="txt_number_of_tickets1">1</string>
+    <string name="txt_tickets">Tickets</string>
+    <string name="txt_ticket_cost">00</string>
+    <string name="txt_ticket_amount1">Rs:000</string>
+    <string name="txt_total_amount">Total Amount</string>
+    <string name="txt_total_amount1">Rs:000</string>
+    <string name="txt_date">Date</string>
+    <string name="symbol_asterisk">*</string>
+    <string name="txt_minus">minus</string>
+    <string name="txt_plus">plus</string>
+    <string name="txt_notice">Notice</string>
+    <string name="txt_ticket_guidelines">• Bus numbers are shown based on the stops you have selected.\n
+    • Make sure to check the bus number before boarding.\n
+    • To verify your ticket, show your ticket QR code or ticket number to the conductor.\n
+    • Carry only essentials to avoid crowding and discomfort.\n
+    • To know your stop, ask the conductor.</string>
+    <string name="txt_proceed">Proceed</string>
+    <!--Fragment Ticket Payment-->
+    <string name="txt_amount_payable">Amount Payable</string>
+    <string name="txt_amount_payable1">Rs:000</string>
+    <string name="txt_payment_method">Payment Method</string>
+    <string name="txt_upi">UPI</string>
+    <string name="txt_google_pay">Google Pay</string>
+    <string name="txt_phone_pe">Phone Pe</string>
+    <string name="txt_pay_tm">Paytm</string>
+    <string name="txt_others">Others</string>
+    <string name="txt_cards">Cards</string>
+    <string name="txt_debit_card">Debit Card</string>
+    <string name="txt_credit_card">Credit Card</string>
+    <string name="txt_confirm">Confirm</string>
+    <!--Ticket-->
+    <string name="txt_transport_ticket">Transport Ticket</string>
+    <string name="txt_booking_time">Booking Time</string>
+    <string name="txt_booking_date">Booking Date</string>
+    <string name="txt_begin">Begin</string>
+    <!--Others-->
+    <string name="txt_idk">IDK</string>
+    <string name="txt_no_internet_connection">No Internet</string>
+    <string name="txt_check_your_connection">Check Your Connection</string>
+    <string name="no_10">10</string>
+    <string name="txt_change_password">Change Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_metro_line">Metro Line</string>
+</resources>

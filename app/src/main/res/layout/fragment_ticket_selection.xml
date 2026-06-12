@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue1"
+    tools:context=".fragment_Ticket_Selection">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/corner_views">
+
+            <TextView
+                android:id="@+id/txtView_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/txt_time"
+                android:textColor="@color/black1"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/txt_time1"
+                android:textColor="@color/black1"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtView_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/txt_date"
+                android:textColor="@color/black1"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/txtView_time"
+                app:layout_constraintTop_toBottomOf="@+id/txtView_time" />
+
+            <TextView
+                android:id="@+id/txt_Date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/txt_date1"
+                android:textColor="@color/black1"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@id/txt_Time"
+                app:layout_constraintTop_toBottomOf="@id/txt_Time" />
+
+            <TextView
+                android:id="@+id/txtView_busNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/txt_bus_number"
+                android:textColor="@color/black1"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/txtView_date"
+                app:layout_constraintTop_toBottomOf="@+id/txtView_date" />
+
+            <TextView
+                android:id="@+id/txt_BusNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/txt_bus_number1"
+                android:textColor="@color/black1"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@id/txt_Date"
+                app:layout_constraintTop_toBottomOf="@id/txt_Date" />
+
+            <TextView
+                android:id="@+id/txtView_not"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/txt_number_of_tickets"
+                android:textColor="@color/black1"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="@id/txtView_busNumber"
+                app:layout_constraintTop_toBottomOf="@id/txtView_busNumber" />
+
+            <LinearLayout
+                android:id="@+id/view_not"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/txt_BusNumber"
+                app:layout_constraintTop_toBottomOf="@id/txt_BusNumber">
+
+                <ImageButton
+                    android:id="@+id/minusTicket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/txt_minus"
+                    android:src="@drawable/icon_minus" />
+
+                <TextView
+                    android:id="@+id/txt_TicketCount1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/txt_number_of_tickets1"
+                    android:textColor="@color/black1"
+                    android:textSize="15sp" />
+
+                <ImageButton
+                    android:id="@+id/plusTicket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/txt_plus"
+                    android:src="@drawable/icon_plus" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/view_tickets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="@id/txtView_not"
+                app:layout_constraintTop_toBottomOf="@id/txtView_not">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/txt_tickets"
+                    android:textColor="@color/black1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_TicketCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/txt_ticket_cost"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/symbol_asterisk"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_TicketCount2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/txt_number_of_tickets1"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtTicketAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/txt_ticket_amount1"
+                android:textColor="@color/black1"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@id/view_not"
+                app:layout_constraintTop_toBottomOf="@id/view_not" />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="340dp"
+                android:layout_height="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_line"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view_tickets" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/txt_total_amount"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/view_tickets"
+                app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+            <TextView
+                android:id="@+id/totalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="@string/txt_total_amount1"
+                android:textColor="@color/black1"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@id/txtTicketAmount"
+                app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/txt_notice"
+            android:textColor="@color/black1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="10dp"
+            android:maxWidth="350dp"
+            android:text="@string/txt_ticket_guidelines"
+            android:textColor="@color/black1"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_proceed"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="30dp"
+            android:backgroundTint="@color/teal1"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/txt_proceed"
+            android:textColor="@color/white1"
+            android:textSize="18sp"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+
+</ScrollView>

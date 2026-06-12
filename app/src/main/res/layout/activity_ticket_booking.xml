@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_ticket_booking"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal1"
+    android:orientation="vertical"
+    tools:context=".activity_Ticket_Booking">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_placeStart"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@color/white1"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/placeFrom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:autofillHints=""
+            android:background="@null"
+            android:drawableStart="@drawable/icon_from_point"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:hint="@string/txt_start_point"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            android:textColor="@color/black1"
+            android:textColorHint="@color/grey1"
+            android:textSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_placeEnd"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@color/white1"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView_placeStart">
+
+        <EditText
+            android:id="@+id/placeTo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:autofillHints=""
+            android:background="@null"
+            android:drawableStart="@drawable/icon_location"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:hint="@string/txt_destination"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:textColor="@color/black1"
+            android:textColorHint="@color/grey1"
+            android:textSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/border_views"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardView_placeEnd">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/nav_ticket_booking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white1"
+            app:tabGravity="fill"
+            app:tabIndicatorFullWidth="true"
+            app:tabIndicatorColor="@color/teal1"
+            app:tabMode="fixed"
+            app:tabRippleColor="@color/teal1"
+            app:tabTextColor="@color/black1">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_selection" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_payment" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_ticket_selection" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
